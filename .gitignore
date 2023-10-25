@@ -15,6 +15,5 @@ Cargo.lock
 
 .vscode
 
-# dir for docker mount
-surreal_db
+
 

@@ -6,5 +6,17 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1", features = ["full"]}
-sqlx = {version = "0.7.2", features = ["runtime-tokio"]}
+cornucopia = "0.9.0"
+postgres-types = {version = "0.2.6", features = ["derive"]}
+cornucopia_sync = "0.4.0"
+postgres = "0.19.7"
+
+# Row serialization
+serde = { version = "1.0.189", features = ["derive"] }
+
+# Extra types
+serde_json = "1.0.107"
+uuid = "1.5.0"
+
+[build-dependencies]
+cornucopia = "0.9.0"
